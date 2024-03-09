@@ -27,8 +27,8 @@ pipeline {
             steps {
                 echo 'Docker login'
                 withCredentials([string(credentialsId: 'b1b7440b-b287-4c85-9cc7-44396c103f18', variable: 'RAM_GIT_PASSWORD')]) {
-                   sh 'docker login -u nramprasad85 -p "${RAM_GIT_PASSWORD}"'
-                   sh 'docker push nramprasad85/jenkinspipelinedemo'
+                   sh 'docker login -u ramprasad85 -p "${RAM_GIT_PASSWORD}"'
+                   sh 'docker push ramprasad85/jenkinspipelinedemo'
                 }                
               }
         }
